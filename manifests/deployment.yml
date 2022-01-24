@@ -14,9 +14,9 @@ spec:
     spec:
       containers:
         - name: web
-          image: tailspinspacegameprod.azurecr.io/web
+          image: tailspinspacegame16708.azurecr.io/web
           ports:
-          - containerPort: 80
+          - containerPort: 81
 ---
 apiVersion : apps/v1
 kind: Deployment
@@ -34,6 +34,6 @@ spec:
     spec:
       containers:
         - name: leaderboard
-          image: tailspinspacegameprod.azurecr.io/leaderboard
+          image: tailspinspacegame16708.azurecr.io/leaderboard
           ports:
-          - containerPort: 80
+          - containerPort: 81
